@@ -19,5 +19,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('keyboard', include('keyboard.urls')),
-    path('keyboard/', include('keyboard.urls'))
+    path('keyboard/', include('keyboard.urls')),
+    path('message', include('message.urls')),
+    path('message/', include('message.urls'))
 ]
