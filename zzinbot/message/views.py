@@ -17,7 +17,7 @@ def index(request):
   ]
 
   if request.method == "POST" :
-    if request.POST['content'] == '찐봇이란?' :
+    if request.GET['content'] == '찐봇이란?' :
       resChat = '찐봇은 2018년에 만들어진 대화형 로봇입니다.'
     else :
       resChat = random.choice(chat)
