@@ -15,6 +15,9 @@ def index(request):
     '나랑 놀자 ^^'
   ]
 
+  if(request.POST['content'] == '찐봇이란?') :
+    resChat = ['찐봇은 여러분들의 친구입니다.']
+
   if request.method == "POST" :  
     message = {
       "message":{

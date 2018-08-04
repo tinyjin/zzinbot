@@ -8,7 +8,7 @@ import json
 def index(request):
   buttons = {
     "type" : "buttons",
-    "buttons" : ["블로그", "깃허브", "링크드인"]
+    "buttons" : ["찐봇이란?"]
   }
 
   jsonObj = json.dumps(buttons, ensure_ascii=False)
