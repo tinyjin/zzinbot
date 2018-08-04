@@ -8,7 +8,7 @@ import random
 
 @csrf_exempt
 def index(request):
-
+  
   chat = [
     '안녕? 나는 찐봇이야!',
     '나는 너희들의 친구야~',
@@ -17,7 +17,7 @@ def index(request):
   ]
 
   if request.method == "POST" :
-    if request.GET['content'] == '찐봇이란?' :
+    if request.POST.get('content') == '찐봇이란?' :
       resChat = '찐봇은 2018년에 만들어진 대화형 로봇입니다.'
     else :
       resChat = random.choice(chat)
